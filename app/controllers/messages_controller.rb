@@ -8,7 +8,7 @@ class MessagesController < ApplicationController
   end
   # 中略
 
-  def createcd
+  def create
     # binding.pry
     @message = Message.new(message_params)
     if @message.save
