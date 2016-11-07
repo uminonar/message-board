@@ -8,7 +8,8 @@ class MessagesController < ApplicationController
   end
   # 中略
 
-  def create
+  def createcd
+    # binding.pry
     @message = Message.new(message_params)
     if @message.save
       redirect_to root_path , notice: 'メッセージを保存しました'
